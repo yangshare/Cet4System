@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.cet4system.domain">
+
+	<class name="Optionsofreading" table="optionsofreading">
+
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="title" />
+		<property name="optionA" />
+		<property name="optionB" />
+		<property name="optionC" />
+		<property name="optionD" />
+		<property name="answer" />
+
+		<property name="testid" type="integer">
+			<column name="testid" />
+		</property>
+	</class>
+
+</hibernate-mapping>
